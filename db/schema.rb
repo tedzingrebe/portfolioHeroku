@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20141113183412) do
 
-  create_table "portusers", force: true do |t|
+  create_table "portusers", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
